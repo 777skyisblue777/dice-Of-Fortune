@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dice of Fortune - About Us</title>
+    <link rel="stylesheet" href="aboutUs.css" type="text/css" title="style" />
+    <script src="mainpage.js"></script>
+  </head>
+
+  <body onload="whenLoadAboutUs()">
+    <header>
+      <button onclick="document.location='mainpage.html'">Home</button>
+      <button onclick="document.location='leaderBoard.html'">
+        Leader Board
+      </button>
+      <button onclick="document.location='aboutUs.html'">About Us</button>
+    </header>
+
+    <hr />
+
+    <div>
+      <button onclick="toggleDarkMode()">
+        <img
+          class="lightDark"
+          src="images/lightTheme.png"
+          alt="light/dark Theme button"
+        />
+      </button>
+      <h1>Dice of Fortune</h1>
+    </div>
+
+    <h3>About us</h3>
+
+    <div class="center">
+      <img src="images/jm.png" alt="Joon Mo Chung" />
+      <img src="images/josh.png" alt="Josh Kamoh" />
+    </div>
+
+    <div class="center">
+      <p id="introduction">
+        This project is an evolution of Josh's high school graduation project.
+        The high school graduation project was a text-based game written in Java
+        language. In this project, we added dice animation, a user interface,
+        and a ranking page. Originally, we were planning to include our photos
+        on the About Us page, but we decided to replace our photos with Josh's
+        drawings as we thought they looked cooler. I hope you enjoy this game.
+        If you have any questions, please contact us via the email address
+        below. Thank you <br /><strong
+          >Joon Mo Chung: teguan@my.yorku.ca / Josh Kamoh:
+          jkamoh@my.yorku.ca</strong
+        >
+      </p>
+    </div>
+
+    <footer class="center">
+      &copy; Authors: Double J: Joon Mo Chung, Josh Kamoh
+    </footer>
+  </body>
+</html>

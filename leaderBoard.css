@@ -1,0 +1,43 @@
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img.lightDark {
+  width: 40px;
+  height: 40px;
+}
+
+h1 {
+  text-align: center;
+  padding: 5px;
+  font-size: 30px;
+  float: right;
+  padding-right: 42%;
+}
+
+h3 {
+  padding-left: 45%;
+}
+
+table,
+th,
+td {
+  font-size: 23px;
+  border: 2px solid;
+  border-collapse: collapse;
+  padding-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: ivory;
+}

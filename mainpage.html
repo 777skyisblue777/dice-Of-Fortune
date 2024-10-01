@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dice of Fortune</title>
+    <link rel="stylesheet" type="text/css" href="mainpage.css" />
+    <script src="mainpage.js"></script>
+  </head>
+  <body onload="whenLoadMainpage()">
+    <header>
+      <button onclick="document.location='mainpage.html'">Home</button>
+      <button onclick="document.location='leaderBoard.html'">
+        Leader Board
+      </button>
+      <button onclick="document.location='aboutUs.html'">About Us</button>
+    </header>
+
+    <hr />
+
+    <div>
+      <button onclick="toggleDarkMode()">
+        <img
+          class="lightDark"
+          src="images/lightTheme.png"
+          alt="light/dark Theme button"
+        />
+      </button>
+      <h1>Dice of Fortune</h1>
+    </div>
+
+    <div id="scoreBox">
+      <p>Score : <span id="score"></span></p>
+    </div>
+
+    <div class="column1 bet">
+      <div class="left">
+        <div class="center">
+          <label for="numberInput">Place your bet: </label>
+          <input type="text" id="numberInput" value="0" />
+        </div>
+
+        <div class="center">
+          <button id="highButton" onclick="lowHigh('high')">High</button>
+          <button id="lowButton" onclick="lowHigh('low')">Low</button>
+        </div>
+
+        <div class="center">
+          <div>
+            <button onclick="guessNumberInput(1)">1</button>
+            <button onclick="guessNumberInput(2)">2</button>
+            <button onclick="guessNumberInput(3)">3</button>
+          </div>
+          <div>
+            <button onclick="guessNumberInput(4)">4</button>
+            <button onclick="guessNumberInput(5)">5</button>
+            <button onclick="guessNumberInput(6)">6</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="column2 dice">
+      <img id="dice" src="images/dice_2.png" alt="dice" />
+    </div>
+
+    <div class="column3 roll">
+      <div class="right">
+        <button id="rollButton" onclick="beforeRoll()">ROLL!</button>
+      </div>
+    </div>
+
+    <div id="textWindow">
+      <p id="text">
+        <strong>Let's make 300 points to win the game!!!</strong><br />
+        bet: <span id="bet"></span><br />
+        low or high: <span id="lowHigh"></span><br />
+        guess number: <span id="guessNumberInput"></span><br />
+        <span id="messageText1"></span><br />
+        <span id="messageText2"></span><br />
+        <span id="messageText3"></span><br />
+        <span id="messageText4"></span><br />
+        <span id="messageText5"></span><br />
+      </p>
+    </div>
+
+    <footer class="center">
+      &copy; Authors: Double J: Joon Mo Chung, Josh Kamoh
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+#dice {
+  width: 30%;
+  float: left;
+  padding-left: 40%;
+}
+
+img.lightDark {
+  width: 40px;
+  height: 40px;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+  padding: 5px;
+  font-size: 30px;
+  float: right;
+  padding-right: 42%;
+}
+
+#scoreBox {
+  font-size: 24px;
+  padding-left: 46%;
+}
+
+/* remain */
+label {
+  font-weight: bold;
+  display: block;
+}
+
+/* remain */
+#numberInput {
+  padding: 5px;
+  width: 80px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.left {
+  padding-left: 30%;
+  width: 100%;
+  float: inline-start;
+}
+
+.right {
+  width: 30%;
+  margin: auto;
+  padding-top: 30%;
+  padding-right: 40%;
+  float: right;
+}
+
+[class*="column"] {
+  width: 100%;
+  display: inline-block;
+  height: 25vh;
+}
+
+@media screen and (min-width: 600px) {
+  [class*="column"] {
+    width: 32%;
+  }
+}
+
+.center {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+#textWindow {
+  padding-left: 38%;
+}
+
+#text {
+  border: solid;
+  width: 38%;
+  height: 155px;
+  text-align: center;
+  text-align: left;
+  padding-left: 2%;
+  font-size: 16.5px;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: ivory;
+}
+
+.dark-mode h1 {
+  color: ivory;
+}

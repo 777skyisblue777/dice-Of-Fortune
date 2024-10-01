@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dice of Fortune - Leader Board</title>
+    <link
+      rel="stylesheet"
+      href="leaderBoard.css"
+      type="text/css"
+      title="style"
+    />
+    <script src="mainpage.js"></script>
+  </head>
+
+  <body onload="whenLoadLeaderBoard()">
+    <header>
+      <button onclick="document.location='mainpage.html'">Home</button>
+      <button onclick="document.location='leaderBoard.html'">
+        Leader Board
+      </button>
+      <button onclick="document.location='aboutUs.html'">About Us</button>
+    </header>
+
+    <hr />
+
+    <div>
+      <button onclick="toggleDarkMode()">
+        <img
+          class="lightDark"
+          src="images/lightTheme.png"
+          alt="light/dark Theme button"
+        />
+      </button>
+      <h1>Dice of Fortune</h1>
+    </div>
+
+    <h3>Leader Board</h3>
+
+    <div class="center">
+      <table class="center">
+        <tr>
+          <th>Ranking</th>
+          <th>Name</th>
+          <th>Time(min:sec:msec)</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td id="row0_col0">A</td>
+          <td id="row0_col1">00:05:31</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td id="row1_col0">B</td>
+          <td id="row1_col1">00:05:40</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td id="row2_col0">C</td>
+          <td id="row2_col1">00:05:50</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td id="row3_col0">D</td>
+          <td id="row3_col1">00:06:21</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td id="row4_col0">E</td>
+          <td id="row4_col1">00:06:50</td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td id="row5_col0">F</td>
+          <td id="row5_col1">00:07:21</td>
+        </tr>
+      </table>
+    </div>
+    <br />
+    <br />
+
+    <footer class="center">
+      &copy; Authors: Double J: Joon Mo Chung, Josh Kamoh
+    </footer>
+  </body>
+</html>
